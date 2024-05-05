@@ -2,8 +2,6 @@
 
 A simple portfolio running in Vite ⚡
 
-This is a template on creating your comfy internet abode. The repository includes two pages: main (`/`) and photo collections (`/photos`).
-
 Feel free to fork and edit 😄
 
 ## BACKGROUND
