@@ -1,0 +1,166 @@
+:root {
+  --primary: #f04a25;
+  --secondary: #7df6bf;
+  --accent: #4cabf3;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #180402;
+  background-color: #FEEFEE;
+  display: flex;
+  place-items: center;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Remove scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Custom colors */
+::selection {
+  color: #180402;
+  background: var(--secondary);
+}
+.header::selection {
+  color: #FEEFEE;
+  background: var(--primary);
+}
+
+/* Fonts */
+.darumadrop {
+  font-family: "Darumadrop One";
+  font-weight: 400;
+  font-style: normal;
+}
+.instrument-sans {
+  font-family: "Instrument Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Redesign tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  width: fit-content;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.1;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  width: fit-content;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Extra classes */
+.extra-space {
+  padding: 3em 0;
+}
+
+.space-up {
+  padding-top: 3em;
+}
+
+.icons-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  padding-top: 1rem;
+}
+.icons-stack img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.photo-stacks {
+  columns: 1;
+  padding: 2rem 0;
+  gap: 1rem;
+  display: inline;
+}
+@media (min-width: 768px) {
+  .photo-stacks {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-stacks {
+    columns: 3;
+  }
+}
+.photo-stacks > :not([hidden]) ~ :not([hidden]) {
+  margin: 1rem 0;
+}
+.photo-stacks img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
